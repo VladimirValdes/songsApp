@@ -1,0 +1,69 @@
+
+.song {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+
+
+    &__name {
+        color: var(--pf-primary-color);
+        font-size: var(--pf-fs-xl);
+        font-weight: var(--pf-font-weight-xl);
+    }
+
+    
+
+    &__first-refrain,  &__last-refrain {
+        color: var(--pf-secondary-color);
+    }
+
+    .tooltip {
+        position: relative;
+        font-weight: inherit;
+        text-decoration: underline;
+        text-decoration-color: var(--pf-highlight-color);
+
+        &:hover {
+            cursor: pointer;
+            .tooltip__box {
+            display: inline-block;
+
+            }
+        }
+
+      
+
+
+        &__box {
+            position: absolute;
+            left: 0;
+            bottom: 30px;
+            z-index: 500;
+            display: none;
+            background-color: var(--pf-primary-color);
+            text-align: center;
+            color: var(--pf-tertiary-color);
+            padding: 5px 10px;
+            border-radius: 5px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -7px;
+                left: calc(50% - 7px);
+                display: block;
+                border-top: 7px solid var(--pf-primary-color);
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                
+
+            }
+        }
+    }
+
+}

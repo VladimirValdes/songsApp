@@ -1,0 +1,22 @@
+
+@use 'core/normalize';
+@use 'abstracts/variables' as *;
+@use 'components/song';
+
+html {
+    
+    font-family: var(--pf-font-family);
+    font-size: var(--pf-fs-400);
+    font-weight: var(--pf-font-weight-md);
+    scrollbar-width: thin;
+    
+}
+
+
+body {
+    background-color: var(--pf-bg-color);
+    color: var(--pf-paragraph-color);
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+

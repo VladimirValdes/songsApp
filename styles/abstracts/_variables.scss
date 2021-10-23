@@ -1,0 +1,52 @@
+
+@use 'mixins' as *;
+
+@include cssvars((
+    // colors
+    primary-color: #fffffe,
+    secondary-color: #f25f4c,
+    tertiary-color: #e53170,
+    highlight-color:#ff8906,
+    bg-color: #0f0e17,
+    paragraph-color: #a7a9be,
+
+
+    // typopraphy
+    font-family: #{ 'Open Sans', sans-serif },
+
+    fs-xl: 1.95rem,
+    fs-600: 1.56rem,
+    fs-500: 1.25rem,
+    fs-400: 1rem,
+
+    l-height-xl: 3.5rem,
+
+    font-weight-sm: 400,
+    font-weight-md: 500,
+    font-weight-lg: 600,
+    font-weight-xl: 800,
+));
+
+
+@media (min-width: 40em) {
+    @include cssvars((
+    // typography
+    
+    fs-xl:2.44rem,
+    fs-600: 2.44rem,
+    fs-500: 1.56rem,
+    fs-400: 1.25rem,
+
+    l-height-xl: 5.5rem,
+
+    ));
+}
+
+$fz-sm: 1rem; //p
+$fz-bs: 1.25rem; // h5
+$fz-xmd: 1.56rem; // h4
+$fz-md: 1.95em; //h3
+$fz-bg: 2.44rem; //h2
+$fz-xl: 3rem; //h1
+
+
